@@ -1,0 +1,24 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  > .conteiner {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header__logo--color {
+  color: var(--black);
+}
+.header__navigation {
+  display: flex;
+  gap: 50px;
+}
+.header__connect {
+  display: flex;
+  margin-left: auto;
+}
+.header__navigation .link.current {
+  color: var(--accent-color);
+}
