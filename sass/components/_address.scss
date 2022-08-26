@@ -1,11 +1,21 @@
 
+
+.address{
+  display: block;
+  text-align: center;
+}
+
 .address__text {
   color: var(--secondary-title-color);
 }
 .address__item {
-  display: block;
-  margin-top: 9px;
+  margin-top: 8px;
+ 
   color: rgba(255, 255, 255, 0.6);
+@include desktop{
+  margin-top: 9px;
+}
+
 }
 .address__link {
   color: rgba(255, 255, 255, 0.6);

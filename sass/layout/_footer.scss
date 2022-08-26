@@ -4,18 +4,35 @@
   padding-bottom: 60px;
 }
 .footer__logo {
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
 }
 .footer__logo--color {
   color: var(--secondary-title-color);
 }
 .footer__content {
-  display: flex;
-  gap: 70px;
-  align-items: baseline;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 165px;
+  }
+  @include desktop {
+    align-items: baseline;
+    gap: 70px;
+  }
+
+  // align-items: baseline;
+  // gap: 70px;
 }
+.footer__part {
+  margin-bottom: 60px;
+}
+
 .footer__title {
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -26,33 +43,50 @@
 }
 .footer__input {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
   margin-top: 16px;
+  @include desktop{
+    gap: 10px;
+  }
 }
 .footer__email {
-  width: 358px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  // width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
-  padding-left: 16px;
+  // padding-left: 16px;
   color: var(--secondary-title-color);
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    @include desktop{
+      width: 358px;
+      padding-left: 16px;
+    }
   }
 }
 .footer__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  // gap: 10px;
+  margin-top: 20px;
+  @include desktop{
+    gap: 10px;
+  }
 }
 .footer__form {
   margin-left: auto;
+  @include tablet {
+    margin-right: auto;
+  }
 }
