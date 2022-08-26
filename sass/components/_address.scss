@@ -3,6 +3,10 @@
 .address{
   display: block;
   text-align: center;
+  @include tablet{
+    padding-left: 15px;
+  padding-right: 15px;
+  }
 }
 
 .address__text {
