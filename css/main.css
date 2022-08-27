@@ -141,18 +141,30 @@ body {
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__accent {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo__accent {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .btn {
@@ -527,6 +539,42 @@ body {
 
 .header__navigation .link.current {
   color: var(--accent-color);
+}
+
+.menu-open {
+  margin-left: auto;
+  padding: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+}
+
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: var(--secondary-title-color);
+  padding-top: 10px;
+}
+
+.menu-close {
+  margin-left: auto;
+  padding: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+}
+
+.mob-menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .hero {

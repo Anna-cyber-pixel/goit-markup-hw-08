@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner">
         <a
           href="./index.html"
           class="header__logo header__logo--color link logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav>
+        <!-- <nav>
           <ul class="navigation header__navigation list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link link current"
@@ -44,8 +44,8 @@
               <a href="" class="navigation__link link">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <div class="connect header__connect">
+        </nav> -->
+        <!-- <div class="connect header__connect">
           <a href="mailto:info@devstudio.com" class="connect__link link">
             <svg class="connect__icon mail" width="16" height="12">
               <use href="./images/icon-defs.svg#icon-envelope"></use>
@@ -58,9 +58,47 @@
             </svg>
             +38 096 111 11 11
           </a>
+        </div> -->
+        <button type="button" class="menu-open">
+          <svg width="40" height="40">
+            <use href="./images/icon-defs.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu">
+        <div class="conteiner">
+          <button type="button" class="menu-close">
+            <svg width="40" height="40">
+              <use href="./images/icon-defs.svg#icon-close-menu-btn"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-nav list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-nav-link link">Студія</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-nav-link link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-nav-link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mob-menu-connect">
+            <a href="mailto:info@devstudio.com" class="mob-menu-link link">
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="mob-menu-link link">
+              +38 096 111 11 11
+            </a>
+          </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero hero__conteiner">
         <div class="conteiner">
@@ -351,7 +389,7 @@
                   <use href="./images/icon-defs.svg#icon-Logo"></use></svg
               ></a>
             </li>
-            <li class="clients__item" >
+            <li class="clients__item">
               <a href="" class="clients__link link"
                 ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/icon-defs.svg#icon-Logo-1"></use></svg
