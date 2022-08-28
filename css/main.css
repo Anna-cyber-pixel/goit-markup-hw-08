@@ -41,7 +41,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -135,7 +134,6 @@ body {
   }
 }
 
-/* outline: 2px solid red; */
 .menu-open {
   margin-left: auto;
   padding: 0 0;
@@ -798,9 +796,19 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -809,6 +817,11 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-2x.jpg);
   }
 }
 
@@ -1138,7 +1151,12 @@ body {
 }
 
 .works {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .works {
+    padding-top: 94px;
+  }
 }
 
 .works__item {

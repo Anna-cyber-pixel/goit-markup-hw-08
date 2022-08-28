@@ -1,5 +1,8 @@
 .works {
-  padding-top: 94px;
+  padding-top: 60px;
+  @include mobile {
+    padding-top: 94px;
+  }
 }
 .works__item {
   width: 100%;

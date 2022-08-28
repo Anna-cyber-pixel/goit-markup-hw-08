@@ -6,20 +6,19 @@
   margin-top: 50px;
   width: 100%;
 }
-.clients__item{
-  width: calc((100% - 30px) /2);
-  @include tablet{
-    width: calc((100% - 60px) /3);
+.clients__item {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
   }
-  @include desktop{
+  @include desktop {
     width: 170px;
     height: 92px;
     flex-wrap: nowrap;
-   };
+  }
 }
 .clients__link {
   display: flex;
-  
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   justify-content: center;
