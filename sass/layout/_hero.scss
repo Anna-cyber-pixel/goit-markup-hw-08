@@ -28,18 +28,21 @@
       url(../images/bg-hero.jpg);
   }
 }
-.hero__conteiner {
+.hero__container {
   margin: auto;
 }
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  @include mobile{
+    font-size: 26px;
+  }
   @include desktop {
     font-size: 44px;
     line-height: 1.36;

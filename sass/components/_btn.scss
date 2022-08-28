@@ -18,6 +18,9 @@
     background-color: var(--hover-hero-btn-color);
   }
   @include desktop{
-    width: 216px;
+    &.hero__btn{
+      width: 216px;
+    }
+    
   }
 }
