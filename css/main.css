@@ -513,8 +513,16 @@ body {
 
 .filter__list {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
 }
 
 .filter__btn {
@@ -549,8 +557,7 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
   background-color: var(--secondary-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -564,19 +571,46 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 
 .modal__title {
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 15px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-title-color);
   margin-bottom: 12px;
 }
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
 
-.modal__btm {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -671,9 +705,22 @@ body {
 }
 
 .check__text {
+  font-size: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .check__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check__text .check__wrap {
@@ -1093,6 +1140,20 @@ body {
   padding-top: 94px;
 }
 
+.works__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .works__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
 .works__list {
   display: flex;
   margin-top: 50px;
@@ -1149,6 +1210,16 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .works__border.tablet {
+    padding-bottom: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__border.tablet {
+    padding-bottom: 24px;
+  }
 }
 
 .works__item {

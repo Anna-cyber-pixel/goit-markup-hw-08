@@ -22,16 +22,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="conteiner">
+      <div class="container">
         <a
           href="./index.html"
           class="header__logo header__logo--color link logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav>
+        <button type="button" class="menu-open">
+          <svg class="menu-open-icon" width="40" height="40">
+            <use href="./images/icon-defs.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+
+        <nav class="visuality">
           <ul class="navigation header__navigation list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link"
+              <a href="./index.html" class="navigation__link link "
                 >Студія</a
               >
             </li>
@@ -45,25 +51,115 @@
             </li>
           </ul>
         </nav>
-        <div class="connect header__connect">
-          <a href="mailto:info@devstudio.com" class="connect__link link">
-            <svg class="connect__icon mail" width="16" height="12">
-              <use href="./images/icon-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a href="tel:+380961111111" class="connect__link tel link">
-            <svg class="connect__icon tel" width="10" height="16">
-              <use href="./images/icon-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
+        <div class="visuality">
+          <div class="connect header__connect">
+            <a
+              href="mailto:info@devstudio.com"
+              class="connect__link email link"
+            >
+              <svg class="connect__icon tablet mail" width="14" height="10">
+                <use href="./images/icon-defs.svg#icon-envelope"></use>
+              </svg>
+              <svg class="connect__icon desktop mail" width="16" height="12">
+                <use href="./images/icon-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="connect__link tel link">
+              <svg class="connect__icon tablet tel" width="10" height="14">
+                <use href="./images/icon-defs.svg#icon-smartphone"></use>
+              </svg>
+              <svg class="connect__icon desktop tel" width="10" height="16">
+                <use href="./images/icon-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close">
+              <svg class="menu-icon" width="40" height="40">
+                <use href="./images/icon-defs.svg#icon-close-menu-btn"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-nav list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-nav-link link"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-nav-link link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-nav-link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-connect">
+              <a href="tel:+380961111111" class="mob-menu-tel link">
+                +38 096 111 11 11
+              </a>
+              <a href="mailto:info@devstudio.com" class="mob-menu-email link">
+                info@devstudio.com
+              </a>
+            </div>
+            <div class="mob-soc">
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-soc-link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-soc-link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-soc-link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-soc-link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="works">
-        <div class="conteiner">
+        <div class="container">
           <ul class="filter filter__list list">
             <li class="filter__item">
               <button class="filter__btn" type="button">Все</button>
@@ -73,6 +169,7 @@
             </li>
             <li class="filter__item">
               <button class="filter__btn" type="button">Додатки</button>
+              <br>
             </li>
             <li class="filter__item">
               <button class="filter__btn" type="button">Дизайн</button>
@@ -98,7 +195,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="works__border">
+                <div class="works__border tablet">
                   <h3 class="works__title">Технокряк</h3>
                   <p class="works__text">Веб-сайт</p>
                 </div>
