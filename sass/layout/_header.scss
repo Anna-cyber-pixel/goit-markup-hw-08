@@ -3,15 +3,24 @@
   > .container {
     display: flex;
     align-items: center;
-    justify-content: space-between
-
+    @media screen and (max-width:1198px) {
+      justify-content: space-between;
+    }
+    @include desktop{
+      justify-content: flex-start;
+    }
   }
 }
+.header__logo {
+  @include desktop{
+    margin-right: 93px;
+  }
+}
+
 .header__logo--color {
   color: var(--black);
 }
 .header__navigation {
-  
   display: flex;
   gap: 50px;
 }

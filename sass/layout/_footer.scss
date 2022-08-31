@@ -7,6 +7,9 @@
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  @include desktop {
+    text-align: start;
+  }
 
   // display: inline-block;
 }
@@ -34,6 +37,9 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @include desktop {
+    text-align: start;
+  }
 }
 .footer__input {
   display: flex;

@@ -1,6 +1,6 @@
 .works {
   padding-top: 60px;
-  @include mobile {
+  @include desktop {
     padding-top: 94px;
   }
 }
@@ -20,10 +20,17 @@
 }
 .works__list {
   display: flex;
-  margin-top: 50px;
+  margin-top: 40px;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-top: 30px;
+  }
+  @include desktop {
+    margin-top: 50px;
+    margin-bottom: 94px;
+  }
 }
 .works__wrap {
   position: relative;

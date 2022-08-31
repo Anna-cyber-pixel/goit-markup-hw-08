@@ -14,6 +14,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-title-color);
+  @include tablet{
+    justify-content: flex-start;
+  }
 }
 .advantage__text {
   line-height: 1.71;
